@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>AI Prompting</title>
+    <base href="/">
     <script src="index.js" defer></script>
     <style>
         *{
-            font-family: "comic sans ms",serif;
-            padding: 5px
-        }
-        input{
-            border-radius: 10px;
-            height: 100px;
-            width: 300px;
-            align: 'left';
+            font-family: "arial",serif;
+            padding: 5px;
+            align-self: center;
         }
         textarea{
             border-radius: 10px
@@ -24,8 +20,12 @@
     <label for="prompt">Prompt</label><br>
         <textarea id="prompt"></textarea><br><br>
     <button id="button">Send</button><br><br>
+    <label for="models-container">Models</label><br>
+    <div id="models-container">
+        <p>Carregando modelos...</p>
+    </div>
     <label for="output">Output</label><br>
-    <textarea id="output" disabled rows="10" cols="33"></textarea>
+    <textarea id="output" disabled rows="10" cols="100"></textarea>
 
 </body>
 </html>
